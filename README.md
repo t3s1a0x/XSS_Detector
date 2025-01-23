@@ -18,7 +18,7 @@ Detailed Reports: Outputs detailed information on detected vulnerabilities.
 
 Clone the repository:
 
-- git clone https://github.com/e5t3hb4r47/XXS_Detector.git
+- git clone https://github.com/e5t3hb4r47/XSS_Detector.git
 - cd XXS_Detector
 
 ### Install the required Python libraries:
