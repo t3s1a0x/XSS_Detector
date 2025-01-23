@@ -18,8 +18,8 @@ Detailed Reports: Outputs detailed information on detected vulnerabilities.
 
 Clone the repository:
 
-git clone https://github.com/your_username/xss-testing-tool.git
-cd xss-testing-tool
+git clone https://github.com/e5t3hb4r47/XXS_Detector.git
+cd XXS_Detector
 
 ### Install the required Python libraries:
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 Basic Syntax
 
-python xss_tool.py -u <URL> -p <PAYLOAD_FILE>
+python xss_detector.py -u <URL> -p <PAYLOAD_FILE>
 
 Arguments
 
@@ -39,7 +39,7 @@ Arguments
 
 Example
 
-python xss_tool.py -u "https://example.com/search?q=" -p payloads.txt
+python xss_detector.py -u "https://example.com/search?q=" -p payloads.txt
 
 Output Example
 
