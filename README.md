@@ -18,28 +18,28 @@ Detailed Reports: Outputs detailed information on detected vulnerabilities.
 
 Clone the repository:
 
-git clone https://github.com/e5t3hb4r47/XXS_Detector.git
+- git clone https://github.com/e5t3hb4r47/XXS_Detector.git
 - cd XXS_Detector
 
 ### Install the required Python libraries:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ### Usage
 
 Basic Syntax
 
-python xss_detector.py -u <URL> -p <PAYLOAD_FILE>
+- python xss_detector.py -u <URL> -p <PAYLOAD_FILE>
 
 Arguments
 
--u, --url : The base URL to test. Example: https://example.com/search?q=
+- -u, --url : The base URL to test. Example: https://example.com/search?q=
 
--p, --payload : The file containing XSS payloads to test.
+- -p, --payload : The file containing XSS payloads to test.
 
 Example
 
-python xss_detector.py -u "https://example.com/search?q=" -p payloads.txt
+- python xss_detector.py -u "https://example.com/search?q=" -p payloads.txt
 
 Output Example
 
@@ -61,19 +61,19 @@ Testing Payloads:  30%|███████▏            | 15/50 [00:01<00:03,
 
 ### Requirements
 
-Python 3.6+
+- Python 3.6+
 
 Libraries:
 
-requests
+- requests
 
-tqdm
+- tqdm
 
-colorama
+- colorama
 
 Install dependencies with:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ### Notes
 
