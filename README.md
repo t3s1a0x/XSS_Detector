@@ -2,49 +2,57 @@
 
 This is an advanced tool designed to test websites for potential Cross-Site Scripting (XSS) vulnerabilities. The tool supports multi-threaded payload testing and includes advanced features like progress bars, colored outputs, and graceful interruption handling.
 
+---
+
 ### Features
+- **Multi-threaded Execution**: Fast payload testing using multiple threads.
+- **Dynamic Progress Bar**: Visual representation of testing progress.
+- **Colored Output**: Clearly distinguishes between various messages (errors, successes, info).
+- **Graceful Interruption**: Handles Ctrl+C to exit the program cleanly.
+- **Detailed Reports**: Outputs detailed information on detected vulnerabilities.
 
-Multi-threaded Execution: Fast payload testing using multiple threads.
-
-Dynamic Progress Bar: Visual representation of testing progress.
-
-Colored Output: Clearly distinguishes between various messages (errors, successes, info).
-
-Graceful Interruption: Handles Ctrl+C to exit the program cleanly.
-
-Detailed Reports: Outputs detailed information on detected vulnerabilities.
+---
 
 ### Installation
 
 Clone the repository:
 
-- git clone https://github.com/e5t3hb4r47/XSS_Detector.git
-- cd XXS_Detector
+```bash
+git clone https://github.com/e5t3hb4r47/XSS_Detector.git
+cd XSS_Detector
+```
 
-### Install the required Python libraries:
+Install the required Python libraries:
 
-- pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
+
+---
 
 ### Usage
 
-Basic Syntax
+#### Basic Syntax
+```bash
+python xss_detector.py -u <URL> -p <PAYLOAD_FILE>
+```
 
-- python xss_detector.py -u <URL> -p <PAYLOAD_FILE>
+#### Arguments
+- `-u`, `--url` : The base URL to test. Example: `https://example.com/search?q=`
+- `-p`, `--payload` : The file containing XSS payloads to test.
 
-Arguments
+#### Example
+```bash
+python xss_detector.py -u "https://example.com/search?q=" -p payloads.txt
+```
 
-- -u, --url : The base URL to test. Example: https://example.com/search?q=
+---
 
-- -p, --payload : The file containing XSS payloads to test.
-
-Example
-
-- python xss_detector.py -u "https://example.com/search?q=" -p payloads.txt
-
-Output Example
+### Output Example
 
 When running the tool, the following output is displayed:
 
+```
 [#] @e5t3hb4r47 [#]
 [*] Loaded 50 payloads from payloads.txt
 [*] Starting XSS tests...
@@ -58,32 +66,32 @@ Testing Payloads:  30%|███████▏            | 15/50 [00:01<00:03,
     [+] Response Length: 14859 bytes
 
 [!] Stopping further testing as vulnerability was detected.
+```
+
+---
 
 ### Requirements
 
-- Python 3.6+
+- **Python 3.6+**
 
-Libraries:
-
-- requests
-
-- tqdm
-
-- colorama
+**Libraries:**
+- `requests`
+- `tqdm`
+- `colorama`
 
 Install dependencies with:
+```bash
+pip install -r requirements.txt
+```
 
-- pip install -r requirements.txt
+---
 
 ### Notes
+- The tool tests payloads by appending them to the base URL provided.
+- Make sure you have proper authorization before testing any website for vulnerabilities.
+- Designed for ethical security testing only.
 
-The tool tests payloads by appending them to the base URL provided.
-
-Make sure you have proper authorization before testing any website for vulnerabilities.
-
-Designed for ethical security testing only.
+---
 
 ### Disclaimer
-
 This tool is intended for authorized security testing purposes only. Misuse of this tool can result in legal consequences. Ensure you have explicit permission to test the target website.
-
