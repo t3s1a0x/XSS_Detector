@@ -1,5 +1,5 @@
-### Advanced XSS Detector Tool
-
+# Advanced XSS Detector Tool
+### Created by: Ali Qassem (@e5t3hb4r47)
 This is an advanced tool designed to test websites for potential Cross-Site Scripting (XSS) vulnerabilities. The tool supports multi-threaded payload testing and includes advanced features like progress bars, colored outputs, and graceful interruption handling.
 
 ---
