@@ -1,5 +1,5 @@
 # Advanced XSS Detector Tool
-### Created by: Ali Qassem (@e5t3hb4r47)
+### Created by: Ali Qassem (@t3s1a0x)
 This is an advanced tool designed to test websites for potential Cross-Site Scripting (XSS) vulnerabilities. The tool supports multi-threaded payload testing and includes advanced features like progress bars, colored outputs, and graceful interruption handling.
 
 ---
@@ -18,7 +18,7 @@ This is an advanced tool designed to test websites for potential Cross-Site Scri
 Clone the repository:
 
 ```bash
-git clone https://github.com/e5t3hb4r47/XSS_Detector.git
+git clone https://github.com/t3s1a0x/XSS_Detector.git
 cd XSS_Detector
 ```
 
@@ -53,7 +53,7 @@ python xss_detector.py -u "https://example.com/search?q=" -p payloads.txt
 When running the tool, the following output is displayed:
 
 ```
-[#] @e5t3hb4r47 [#]
+[#] @t3s1a0x [#]
 [*] Loaded 50 payloads from payloads.txt
 [*] Starting XSS tests...
 
